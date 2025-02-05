@@ -1,4 +1,4 @@
-# Unknown-box Approximation to Improve Optical Character Recognition Performance
+# OPTIMIZING OCR PERFORMANCE WITH AN EFFICIENT BLACK-BOX APPROXIMATION FRAMEWORK
 This code repository contains the scripts needs to recreate the results mentioned in the manuscript "OPTIMIZING OCR PERFORMANCE WITH AN EFFICIENT BLACK-BOX
 APPROXIMATION FRAMEWORK"
 ## Contents of the repo
