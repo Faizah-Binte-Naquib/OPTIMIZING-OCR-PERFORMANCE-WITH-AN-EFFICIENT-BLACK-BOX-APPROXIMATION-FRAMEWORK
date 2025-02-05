@@ -22,7 +22,7 @@ class PadWhite(object):
                    pad_width, delta_height-pad_height)
         return ImageOps.expand(img, padding, fill=255)
 
-
+#Handles both grayscale and RGB
 class AddGaussianNoice(object):
     def __init__(self, std=5, mean=0, is_stochastic=False):
         self.std = std
@@ -36,5 +36,10 @@ class AddGaussianNoice(object):
             r_std = self.std/100
         noise = torch.normal(self.mean, r_std, image.shape)
         out_img = image + noise
-        out_img.data.clamp_(0, 1)
+        if image.shape[0] == 1:  # grayscale image
+            out_img.data.clamp_(0, 1)
+        else:  # RGB image
+            out_img.data.clamp_(0, 255)
         return out_img
+
+

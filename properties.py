@@ -13,6 +13,10 @@ patch_dataset_train = "./data/patch_dataset_train"
 patch_dataset_test = "./data/patch_dataset_test"
 patch_dataset_dev = "./data/patch_dataset_dev"
 
+#SROIE 
+sroie_dataset_train = "data/SROIE2019/SROIE2019/train/cropped_img"
+sroie_dataset_dev = "data/SROIE2019/SROIE2019/eval/cropped_img"
+
 
 crnn_model_path = "./outputs/crnn_trained_model/model"
 crnn_tensor_board = "./outputs/crnn_runs/"
@@ -21,6 +25,8 @@ prep_tensor_board = "./outputs/prep_runs/"
 img_out_path = "./outputs/img_out/"
 param_path = "./outputs/params.txt"
 
+trocr_input_size_pos = (384,384)
+trocr_input_size_sroie = (512,512)
 input_size = (32, 128)
 num_workers = 4
 char_set = ['`', ' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '<', '=', '>', '?', '@', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
@@ -29,3 +35,4 @@ char_set = ['`', ' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ','
 tesseract_path = "/usr/share/tesseract-ocr/4.00/tessdata"
 empty_char = ' '
 max_char_len = 25
+max_length = 512
