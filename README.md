@@ -31,9 +31,14 @@ pip install -r requirements.txt
 # Initialize the workspace
 python init_workspace.py
 
-2. Download the datasets (POS & SROIE)
+```
 
-from https://drive.google.com/drive/folders/1IJsx5VqFVzk_dCbMdYukJUyQNZlynowX?usp=sharing
+### **2. Download the datasets (POS & SROIE)**
+
+# Download models from:
+# https://drive.google.com/drive/folders/1IJsx5VqFVzk_dCbMdYukJUyQNZlynowX?usp=sharing
+
+```bash
 
 # Extract the datasets and ensure the folder structure is as follows:
 
@@ -51,7 +56,9 @@ data/
 # Update the SROIE dataset
 python update_dataset.py
 
-3. Get Pretrained Models
+```
+
+### **3. Get Pretrained Models**
 
 # Download pretrained models from:
 # https://drive.google.com/drive/folders/1-MAPdpgTuORs2aXniYoisKyrq5rjqtXU?usp=sharing
@@ -60,8 +67,9 @@ python update_dataset.py
 # - Models under "UNet" -> trained_models/UNet/
 # - Models under "TrOCR" -> trained_models/TrOCR/
 
-4. Run Evaluation
+### **4. Run Evaluation**
 
+```bash
 # Run evaluation with Tesseract OCR on POS dataset
 python test.py --ocr Tesseract --dataset pos
 
