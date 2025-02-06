@@ -1,11 +1,10 @@
 # project
 data/
 outputs/
-trained_models/TrOCR/
-trained_models/UNet/
 ocr-test/
 logs/
 runs/
+trained_models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

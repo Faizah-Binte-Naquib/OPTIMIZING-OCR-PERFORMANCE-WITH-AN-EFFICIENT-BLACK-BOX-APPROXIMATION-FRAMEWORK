@@ -9,21 +9,22 @@ vgg_text_dataset_test = "./data/vgg_test"
 vgg_text_dataset_dev = "./data/vgg_dev"
 
 # POS Patches
-patch_dataset_train = "./data/patch_dataset_train"
-patch_dataset_test = "./data/patch_dataset_test"
-patch_dataset_dev = "./data/patch_dataset_dev"
+patch_dataset_train = "./data/patch_dataset/patch_dataset_train"
+patch_dataset_test = "./data/patch_dataset/patch_dataset_test"
+patch_dataset_dev = "./data/patch_dataset/patch_dataset_dev"
 
 #SROIE 
-sroie_dataset_train = "data/SROIE2019/SROIE2019/train/cropped_img"
-sroie_dataset_dev = "data/SROIE2019/SROIE2019/eval/cropped_img"
+sroie_dataset_train = "data/SROIE2019/train/cropped_img"
+sroie_dataset_dev = "data/SROIE2019/eval/cropped_img"
+sroie_dataset_test = "data/SROIE2019/test/cropped_img"
 
 
-crnn_model_path = "./outputs/crnn_trained_model/model"
-crnn_tensor_board = "./outputs/crnn_runs/"
-prep_model_path = "./outputs/prep_trained_model/"
-prep_tensor_board = "./outputs/prep_runs/"
-img_out_path = "./outputs/img_out/"
-param_path = "./outputs/params.txt"
+trocr_model_path = "./trained_models/TrOCR/"
+tror_tensor_board = "./trained_models/trocr_runs/"
+prep_model_path = "./trained_models/UNet/"
+prep_tensor_board = "./trained_models/UNet/"
+img_out_path = "./trained_models/img_out/"
+param_path = "./trained_models/params.txt"
 
 trocr_input_size_pos = (384,384)
 trocr_input_size_sroie = (512,512)
