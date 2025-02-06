@@ -35,8 +35,8 @@ python init_workspace.py
 
 ### **2. Download the datasets (POS & SROIE)**
 
-# Download models from:
-# https://drive.google.com/drive/folders/1IJsx5VqFVzk_dCbMdYukJUyQNZlynowX?usp=sharing
+Download models from:
+https://drive.google.com/drive/folders/1IJsx5VqFVzk_dCbMdYukJUyQNZlynowX?usp=sharing
 
 ```bash
 
@@ -60,12 +60,12 @@ python update_dataset.py
 
 ### **3. Get Pretrained Models**
 
-# Download pretrained models from:
-# https://drive.google.com/drive/folders/1-MAPdpgTuORs2aXniYoisKyrq5rjqtXU?usp=sharing
+Download pretrained models from:
+https://drive.google.com/drive/folders/1-MAPdpgTuORs2aXniYoisKyrq5rjqtXU?usp=sharing
 
-# Extract the models into the following directories:
-# - Models under "UNet" -> trained_models/UNet/
-# - Models under "TrOCR" -> trained_models/TrOCR/
+Extract the models into the following directories:
+- Models under "UNet" -> trained_models/UNet/
+- Models under "TrOCR" -> trained_models/TrOCR/
 
 ### **4. Run Evaluation**
 
